@@ -111,8 +111,10 @@ class HighlightFinder(object):
         return alive
 
     def invert_team(self, teamid):
-        if teamid == 2 or teamid == 3:
-            return 3 if teamid == 2 else 2
+        if teamid == 2:
+            return 3
+        elif teamid == 3:
+            return 2
         return teamid
 
     def print_results(self):
